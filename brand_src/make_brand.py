@@ -2,6 +2,7 @@
 
 The artwork is drawn in code: a night-blue tile with a model grid, a gold sun, a cloud and rain.
 If a square .png/.jpg is placed in brand_src/, it is used instead of the drawing.
+A wide docs/images/banner.jpg is used for the logo images.
 """
 import math
 from pathlib import Path
@@ -90,4 +91,13 @@ for suffix, size in (("", 256), ("@2x", 512)):
     for base in ("icon", "logo", "dark_icon", "dark_logo"):
         img.save(OUT / f"{base}{suffix}.png", optimize=True)
 rounded(art.resize((320, 320), Image.LANCZOS), 0.18).save(DOCS / "logo.png", optimize=True)
+
+# a wide banner (docs/images/banner.jpg) becomes the integration logo
+banner = DOCS / "banner.jpg"
+if banner.exists():
+    b = Image.open(banner).convert("RGBA")
+    for suffix, h in (("", 256), ("@2x", 512)):
+        img = rounded(b.resize((round(b.width * h / b.height), h), Image.LANCZOS), 0.06)
+        for base in ("logo", "dark_logo"):
+            img.save(OUT / f"{base}{suffix}.png", optimize=True)
 print("brand images written")

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/logo.png" alt="TMD WRF Forecast" width="200">
+  <img src="docs/images/banner.jpg" alt="TMD WRF Forecast" width="100%">
 </p>
 
 <h1 align="center">🇹🇭 TMD WRF Forecast</h1>
@@ -34,7 +34,7 @@ Global models like ECMWF, GFS or the ones behind Pirate Weather and OpenWeatherM
   - **Precipitation next 24 h** (mm).
   - **Model run** (diagnostic): which TMD run the data comes from.
 - **Thunderstorm detection**: heavy rain under cold, high cloud tops is shown as *lightning-rainy*.
-- **Light on the TMD server**: each 100 MB model file is searched with small range requests (about 30 per file, a few hundred kB in total), and only when TMD has published a new run.
+- **Light on the TMD server**: each 100 MB model file is searched with small range requests (about 30 per file, roughly 250 kB instead of 100 MB), and only when TMD has published a new run.
 - English, Thai and German translations.
 
 Pairs well with the [Tropical Weather Card](https://github.com/mb26-dev/ha-tropical-weather): add the entity to its `sources` to compare TMD with the global models, and use the radiation sensor as `solar_radiation`.
