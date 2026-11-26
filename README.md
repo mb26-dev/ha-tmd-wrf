@@ -12,8 +12,8 @@
 <p align="center">
   <a href="https://github.com/hacs/integration"><img src="https://img.shields.io/badge/HACS-Custom-41BDF5?logo=homeassistantcommunitystore&logoColor=white" alt="HACS Custom"></a>
   <a href="https://github.com/mb26-dev/ha-tmd-wrf/releases"><img src="https://img.shields.io/github/v/release/mb26-dev/ha-tmd-wrf?label=release" alt="Release"></a>
-  <a href="https://www.home-assistant.io"><img src="https://img.shields.io/badge/Home_Assistant-2024.8%2B-18BCF2?style=flat&logo=homeassistant&logoColor=white" alt="Home Assistant 2024.8+"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-97CA00?style=flat" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/Home%20Assistant-2024.8%2B-18BCF2?logo=homeassistant&logoColor=white" alt="Home Assistant">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/mb26-dev/ha-tmd-wrf" alt="License"></a>
   <a href="https://ko-fi.com/mb26dev"><img src="https://img.shields.io/badge/Ko--fi-support-FF5E5B?logo=ko-fi&logoColor=white" alt="Ko-fi"></a>
 </p>
 
