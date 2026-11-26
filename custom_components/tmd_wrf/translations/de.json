@@ -1,0 +1,38 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "TMD WRF Forecast",
+        "description": "Vorhersage aus dem WRF-Modell des thailändischen Wetterdienstes (3 km, 3 Tage stündlich, danach bis 7 Tage alle 3 Stunden). Der Ort muss in Thailand oder den Nachbarregionen liegen. Inoffizielle Integration, nicht mit TMD verbunden.",
+        "data": {
+          "name": "Name",
+          "latitude": "Breitengrad",
+          "longitude": "Längengrad"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Der TMD-Server ist nicht erreichbar. Bitte später erneut versuchen.",
+      "outside_domain": "Dieser Ort liegt außerhalb des TMD-Modellgebiets (Thailand und Nachbarregionen)."
+    },
+    "abort": {
+      "already_configured": "Dieser Ort ist bereits eingerichtet."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "solar_radiation": {
+        "name": "Sonneneinstrahlung"
+      },
+      "cloud_coverage": {
+        "name": "Bewölkung"
+      },
+      "precipitation_next_24h": {
+        "name": "Niederschlag nächste 24 h"
+      },
+      "model_run": {
+        "name": "Modelllauf"
+      }
+    }
+  }
+}
